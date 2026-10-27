@@ -98,8 +98,13 @@ Personas implicadas en el proyecto:
 
 | Incidencia | Problema de los sistemas de ficheros | Explicación aplicada al caso (con datos de los extractos) |
 |---|---|---|
-| I1 | | |
-| … | | |
+| I1 |Redundancia &rarr; inconsistencia |Lucia en el fichero de cadiz con c-014 vive en una c/Sopranis y en el fichero de socios de jerez con j-102 aparece la dirección en c/Larga. |
+| I2| Concurrencia &rarr; Accesos simultáneos | Dos personas reservaron al mismo tiempo la utima plaza. |
+|I3| Accesso dificil &rarr; Consultas no previstas | Al tener los ficheros con diferentes campos al hace runa petición por un campo que no esta en los otros ficheros, la petición es dificil de aplicar.|
+|I4|Seguridad &rarr; Acceso no controlado| Como no tenemos un control de accceso cuando se consula algo puede ver los datos privados.|
+|i5| Integridad  &rarr; Restricciones dificil de aplicar|  Existe una reserva de un socio que no esta en el fichero de socios ya que no se ha guardado.|
+|i6| Dependencia &rarr; Los cambios fisicos afectan a los programas| Al modificar la estructura de un archivo el programa dejo de ejecutar bien el programa y dejo de mostrar otros ficheros.|
+|i7|integridad &rarr; Restricción dificil de aplicar| Los socios tienen la misma tarifa pero pagan distinto precio debido a un error de sistema.|
 
 **1.2.** El fichero `RESERVAS` repite en cada registro el nombre del socio, el día, la hora y el monitor de cada clase.
 
